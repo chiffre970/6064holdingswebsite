@@ -9,7 +9,7 @@
 }
 
 html {
-  background: var(--ink);
+  background: var(--paper);
 }
 
 body {
@@ -21,7 +21,6 @@ body {
   padding: clamp(1.25rem, 4vw, 2.75rem);
   padding-bottom: max(clamp(1.25rem, 4vw, 2.75rem), env(safe-area-inset-bottom));
   overflow: hidden;
-  border-radius: 1.25rem;
   background: var(--paper);
   color: var(--ink);
   font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
