@@ -20,56 +20,32 @@
   </header>
 
   <main class="stage">
-    <figure class="figure">
-      <pre class="ascii-cube" id="ascii-cube" aria-hidden="true">
-
-
-
-
-                   +---
-                  /|  ------
-                // |       ------
-               //  |            ------
-              //   |                  -----
-             /     |                       --+
-           //      |                      ---|
-          //       |                   ---   ||
-         +/--      |                ---       |
-         |   ------|              ---         |
-         |         |-------    ---            |
-         |         |      ---+-               ||
-        |          |         |                 |
-        |          |         |                 |
-        |          |         |                 |
-        |          |         |                  |
-        |          |         |                  |
-        |          |          |                 |
-       ||          |          |                 |
-       |         --+---------------              |
-       |   ------             |   ---------------+
-       +-----------           |    ----------
-                   -----------+-----
-
-
-
-      </pre>
-      <figcaption class="caption">
-        <p class="formula">
-          <span aria-hidden="true">6064 / 4813 ≈ ∛2</span>
-          <span class="visually-hidden">6064 divided by 4813 is approximately the cube root of two.</span>
-        </p>
-        <p class="statement">A change in scale. Twice the volume.</p>
-        <p class="visually-hidden">A slowly rotating ASCII wireframe cube breathes from one unit to approximately 1.26 units in edge length, doubling its volume.</p>
-      </figcaption>
-      <button class="motion-toggle" id="motion-toggle" type="button" aria-controls="ascii-cube" hidden>
-        Pause animation
-      </button>
+    <figure class="figure" aria-label="A slowly rotating ASCII pyramid">
+      <pre class="pyramid-fallback" aria-hidden="true">                        :
+                        :
+                       ::.
+                       ::.
+                      :::..
+                     :::...
+                     :::....
+                    ::::.....
+                    ::::.....
+                   :::::......
+                  ::::::......
+                  ::::::.......
+                 :::::::.......
+                 :::::::........
+                :::::::.........
+                :::::::..........
+               ::::::::...........
+               ::::::::...........
+              :::::::::...........
+              :::::::::............
+               ::::::::............
+                  :::::.........
+                     :..</pre>
+      <canvas class="pyramid-canvas" id="pyramid-canvas" width="460" height="440" aria-hidden="true" hidden></canvas>
     </figure>
   </main>
-
-  <footer class="footer">
-    <p>6064 Holdings</p>
-    <p class="footer__aside">Independent online retail.</p>
-  </footer>
 </body>
 </html>

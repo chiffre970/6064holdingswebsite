@@ -50,8 +50,15 @@ already deployed.
 Official reference: [Managing a custom domain for your GitHub Pages
 site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
-## The scale
+## Animation
 
-`6064 / 4813 ≈ ∛2`, so a cube scaled by that ratio has approximately twice its
-original volume. Background:
-[MathPages — cube root of two](https://www.mathpages.com/home/kmath434.htm)
+The centerpiece is a slowly rotating, lightly shaded ASCII pyramid rendered on
+a high-DPI canvas. Points are sampled deterministically across the four
+triangular faces of a square-based pyramid, back faces are hidden, and the
+visible surfaces use light and face normals to vary the opacity of a restrained
+`. : + *` glyph palette. The full turn takes about 24 seconds.
+
+The animation follows `prefers-reduced-motion` and renders a single static
+frame when reduced motion is requested. It pauses while the page is hidden.
+Before JavaScript runs, or if canvas rendering is unavailable, a static
+plain-text pyramid is shown instead.
