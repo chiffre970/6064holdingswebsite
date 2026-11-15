@@ -62,20 +62,12 @@ body {
 .contact {
   grid-area: 1 / 1;
   align-self: end;
-  justify-self: center;
+  justify-self: stretch;
   z-index: 1;
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
-}
-
-.contact a {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.contact a:hover,
-.contact a:focus-visible {
   color: var(--ink);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .figure {
