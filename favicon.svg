@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">6064 Holdings</title>
+  <rect width="64" height="64" rx="13" fill="#f7f6f2"/>
+  <text
+    x="32"
+    y="48"
+    fill="#24231f"
+    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+    font-size="43"
+    font-weight="500"
+    text-anchor="middle"
+  >6</text>
+</svg>
