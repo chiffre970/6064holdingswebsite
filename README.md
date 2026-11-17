@@ -3,6 +3,15 @@
 A minimal static holding-company page for **6064holdings.com**. The page has no
 build step and no dependencies.
 
+## Pages
+
+- `/` is the home page: the animated pyramid, a tagline and the footer.
+- `/about/`, `/privacy/` and `/terms/` are static pages (`<name>/index.html`).
+  They share `styles.css` and repeat the same footer markup, so update the
+  footer in all four HTML files if it changes.
+- `robots.txt` and `sitemap.xml` list the four URLs; add new pages to the
+  sitemap.
+
 ## Local preview
 
 From the repository root:
